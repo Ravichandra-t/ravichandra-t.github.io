@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>EmbedCraft | Coming Soon</title>
+
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+        background:
+            radial-gradient(circle at top, rgba(56, 189, 248, 0.12), transparent 60%),
+            linear-gradient(135deg, #020617, #0f172a, #020617);
+        color: #ffffff;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* SLOW FADE-IN ANIMATION */
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .container {
+        text-align: center;
+        max-width: 720px;
+        padding: 40px 20px;
+    }
+
+    /* LOGO */
+    .logo-img {
+        width: 180px;
+        max-width: 80%;
+        margin-bottom: 25px;
+        opacity: 0;
+        animation: fadeInUp 2.2s ease forwards;
+        filter: drop-shadow(0 8px 30px rgba(0, 0, 0, 0.5));
+    }
+
+    /* TAGLINE */
+    .tagline {
+        font-size: 1.1rem;
+        color: #c7d2fe;
+        margin-bottom: 30px;
+        opacity: 0;
+        animation: fadeInUp 2.2s ease forwards;
+        animation-delay: 0.6s;
+    }
+
+    .divider {
+        width: 80px;
+        height: 4px;
+        background: #f59e0b;
+        margin: 0 auto 30px;
+        border-radius: 2px;
+        opacity: 0;
+        animation: fadeInUp 2.2s ease forwards;
+        animation-delay: 1s;
+    }
+
+    /* COMING SOON */
+    .coming {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+        opacity: 0;
+        animation: fadeInUp 2.2s ease forwards;
+        animation-delay: 1.4s;
+    }
+
+    /* DESCRIPTION */
+    .description {
+        font-size: 1rem;
+        color: #d1d5db;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        opacity: 0;
+        animation: fadeInUp 2.2s ease forwards;
+        animation-delay: 1.8s;
+    }
+
+    /* SOCIAL ICONS */
+    .socials {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        margin-bottom: 35px;
+        opacity: 0;
+        animation: fadeInUp 2.2s ease forwards;
+        animation-delay: 2.2s;
+    }
+
+    .socials a {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.08);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .socials a:hover {
+        transform: translateY(-4px);
+        background: rgba(56, 189, 248, 0.25);
+    }
+
+    .socials img {
+        width: 22px;
+        height: 22px;
+        filter: invert(1);
+    }
+
+    /* FOOTER */
+    .footer {
+        font-size: 0.9rem;
+        color: #94a3b8;
+        opacity: 0;
+        animation: fadeInUp 2.2s ease forwards;
+        animation-delay: 2.6s;
+    }
+
+    @media (max-width: 600px) {
+        .coming {
+            font-size: 1.6rem;
+        }
+    }
+</style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- LOGO -->
+        <img src="logo.png" alt="EmbedCraft Logo" class="logo-img">
+
+        <!-- TAGLINE -->
+        <div class="tagline">
+            Craft Your Embedded Skills
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- COMING SOON -->
+        <div class="coming">
+            🚀 Coming Soon
+        </div>
+
+        <!-- DESCRIPTION -->
+        <p class="description">
+            We’re building a learning platform focused on
+            <strong>embedded systems</strong>, offering detailed explanations of
+            <strong>basic peripheral interfacing</strong> and practical
+            <strong>academic project ideas</strong> for Diploma and BE students.
+            <br><br>
+            Follow us to stay updated.
+        </p>
+
+        <!-- SOCIAL ICONS -->
+        <div class="socials">
+            <a href="https://www.instagram.com/embedcraft/" target="_blank" aria-label="Instagram">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://www.youtube.com/@EmbedCraftYt" target="_blank" aria-label="YouTube">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg" alt="YouTube">
+            </a>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            © 2026 EmbedCraft | Learn • Build • Embed
+        </div>
+
+    </div>
+
+</body>
+</html>
